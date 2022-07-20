@@ -1,0 +1,263 @@
+{% extends "base.html" %}
+{% load static %}
+{% block content%}
+
+<div class="page-wrapper bg-gra-03 p-t-45 p-b-50">
+    <div class="wrapper wrapper--w790">
+        <div class="card card-5">
+            <div class="card-heading" id="hh">
+            </div>
+            <div class="card-body">
+                {% if value %}
+                <script>
+                    alert("Appointment booked!");
+                </script>
+            {% else %}
+                <script>
+                    
+                </script>
+            {% endif%}
+                <form method="POST" action="{% url 'appointment' %}">
+                    {% csrf_token %}
+                    <section id="section-content" class="content page-17 moto-section" data-widget="section"
+                        data-container="section">
+                        <div class="moto-widget moto-widget-block moto-bg-color_custom4 moto-spacing-top-large moto-spacing-right-auto moto-spacing-bottom-large moto-spacing-left-auto"
+                            data-widget="block" data-spacing="lala"
+                            style="background-image:url(../{% static 'mt-demo/79800/79832/mt-content/uploads/2019/04/mt-1802-content-bg05.jpg' %});background-position:top;background-repeat:no-repeat;background-size:cover;"
+                            data-bg-image="{% static '2019/04/mt-1802-content-bg05.jpg' %}" data-bg-position="top">
+
+
+                            <div class="container-fluid">
+                                <div class="row">
+                                    <div class="moto-cell col-sm-12" data-container="container">
+
+
+                                        <div class="moto-widget moto-widget-row row-fixed moto-justify-content_center moto-spacing-top-auto moto-spacing-right-auto moto-spacing-bottom-auto moto-spacing-left-auto"
+                                            data-grid-type="sm" data-widget="row" data-spacing="aaaa" style=""
+                                            data-bg-position="left top">
+
+
+                                            <div class="container-fluid">
+                                                <div class="row" data-container="container">
+
+
+                                                    <div class="moto-widget moto-widget-row__column moto-cell col-sm-12 moto-spacing-top-auto moto-spacing-right-auto moto-spacing-bottom-auto moto-spacing-left-auto"
+                                                        style="" data-widget="row.column" data-container="container"
+                                                        data-spacing="aaaa" data-bg-position="left top">
+
+
+
+                                                        <div class="moto-widget moto-widget-text moto-preset-default moto-spacing-top-auto moto-spacing-right-auto moto-spacing-bottom-auto moto-spacing-left-auto"
+                                                            data-widget="text" data-preset="default" data-spacing="aaaa"
+                                                            data-animation="">
+                                                            <div
+                                                                class="moto-widget-text-content moto-widget-text-editable">
+                                                                <h1 class="moto-text_system_5">Appointment</h1>
+                                                            </div>
+                                                        </div>
+
+
+                                                    </div>
+
+
+
+                                                </div>
+                                            </div>
+                                        </div>
+
+
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="form-row m-b-55">
+                            <div class="moto-widget moto-widget-row__column moto-cell col-sm-8 moto-spacing-top-auto moto-spacing-right-auto moto-spacing-bottom-auto moto-spacing-left-auto"
+                                style="" data-widget="row.column" data-container="container" data-spacing="aaaa"
+                                data-bg-position="left top">
+
+
+                                <div class="moto-widget moto-widget-row moto-spacing-top-large moto-spacing-right-auto moto-spacing-bottom-auto moto-spacing-left-auto"
+                                    data-grid-type="sm" data-widget="row" data-spacing="laaa" style=""
+                                    data-bg-position="left top">
+
+
+                                    <div class="container-fluid">
+                                        <div class="row" data-container="container">
+
+
+                                            <div class="moto-widget moto-widget-row__column moto-cell col-sm-1 moto-spacing-top-auto moto-spacing-right-auto moto-spacing-bottom-auto moto-spacing-left-auto"
+                                                style="" data-widget="row.column" data-container="container"
+                                                data-spacing="aaaa" data-bg-position="left top">
+
+
+                                            </div>
+                                            <div class="moto-widget moto-widget-row__column moto-cell col-sm-9 moto-spacing-top-auto moto-spacing-right-auto moto-spacing-bottom-auto moto-spacing-left-auto"
+                                                style="" data-widget="row.column" data-container="container"
+                                                data-spacing="aaaa" data-bg-position="left top">
+
+
+                                                <div class="moto-widget moto-widget-row moto-spacing-top-auto moto-spacing-right-auto moto-spacing-bottom-auto moto-spacing-left-auto"
+                                                    data-grid-type="sm" data-widget="row" data-spacing="aaaa" style=""
+                                                    data-bg-position="left top">
+
+
+                                                    <div class="container-fluid">
+                                                        <div class="row" data-container="container">
+
+
+                                                            <div class="moto-widget moto-widget-row__column moto-cell col-sm-6 moto-spacing-top-auto moto-spacing-right-auto moto-spacing-bottom-large moto-spacing-left-auto"
+                                                                style="" data-widget="row.column"
+                                                                data-container="container" data-spacing="aala"
+                                                                data-bg-position="left top">
+                                                                <div class="moto-widget moto-widget-text moto-preset-default moto-spacing-top-auto moto-spacing-right-small moto-spacing-bottom-auto moto-spacing-left-small"
+                                                                    data-widget="text" data-preset="default"
+                                                                    data-spacing="asas" data-animation="">
+                                                                </div>
+
+
+                                                                <div class="value">
+                                                                    <div class="row row-space">
+
+                                                                        <div class="input-group-desc">
+
+                                                                            <div class="moto-widget moto-widget-text moto-preset-default moto-spacing-top-auto moto-spacing-right-small moto-spacing-bottom-auto moto-spacing-left-small"
+                                                                                data-widget="text" data-preset="default"
+                                                                                data-spacing="asas" data-animation=""
+                                                                                data-draggable-disabled="">
+                                                                                <div
+                                                                                    class="moto-widget-text-content moto-widget-text-editable">
+                                                                                    <p class="moto-text_261">Name:</p>
+                                                                                    <p class="moto-text_261"><br></p>
+                                                                                    <p class="moto-text_186"><input
+                                                                                            class="input--style-5"
+                                                                                            type="text" name="name"
+                                                                                            id="name"><br></p>
+                                                                                    </p>
+                                                                                </div>
+                                                                                <div data-widget-id="wid_1555318877_nokf3ahaj"
+                                                                                    class="moto-widget moto-widget-divider moto-preset-2 moto-align-left moto-spacing-top-small moto-spacing-right-auto moto-spacing-bottom-small moto-spacing-left-auto  "
+                                                                                    data-widget="divider_horizontal"
+                                                                                    data-preset="2">
+                                                                                    <hr class="moto-widget-divider-line"
+                                                                                        style="max-width:100%;width:60px;">
+                                                                                </div>
+                                                                            </div>
+
+
+                                                                            <div class="moto-widget moto-widget-text moto-preset-default moto-spacing-top-auto moto-spacing-right-small moto-spacing-bottom-auto moto-spacing-left-small"
+                                                                                data-widget="text" data-preset="default"
+                                                                                data-spacing="asas" data-animation=""
+                                                                                data-draggable-disabled="">
+                                                                                <div
+                                                                                    class="moto-widget-text-content moto-widget-text-editable">
+                                                                                    <p class="moto-text_261">Phone no:
+                                                                                    </p>
+                                                                                    <p class="moto-text_261"><br></p>
+                                                                                    <p class="moto-text_186"><input
+                                                                                            class="input--style-5"
+                                                                                            type="text" name="phone"
+                                                                                            id="phone"><br></p>
+                                                                                    </p>
+                                                                                </div>
+                                                                                <div data-widget-id="wid_1555318877_nokf3ahaj"
+                                                                                    class="moto-widget moto-widget-divider moto-preset-2 moto-align-left moto-spacing-top-small moto-spacing-right-auto moto-spacing-bottom-small moto-spacing-left-auto  "
+                                                                                    data-widget="divider_horizontal"
+                                                                                    data-preset="2">
+                                                                                    <hr class="moto-widget-divider-line"
+                                                                                        style="max-width:100%;width:60px;">
+                                                                                </div>
+                                                                            </div>
+
+                                                                            <div class="moto-widget moto-widget-text moto-preset-default moto-spacing-top-auto moto-spacing-right-small moto-spacing-bottom-auto moto-spacing-left-small"
+                                                                                data-widget="text" data-preset="default"
+                                                                                data-spacing="asas" data-animation=""
+                                                                                data-draggable-disabled="">
+                                                                                <div
+                                                                                    class="moto-widget-text-content moto-widget-text-editable">
+                                                                                    <p class="moto-text_261">Select
+                                                                                        date:</p>
+                                                                                    <p class="moto-text_261"><br></p>
+                                                                                    <p class="moto-text_186"><input
+                                                                                            type="date" id="date"
+                                                                                            name="date"
+                                                                                            value="2021-02-19"
+                                                                                            min="2021-02-19"
+                                                                                            max="2021-03-19"><br></p>
+                                                                                    </p>
+                                                                                </div>
+                                                                                <div data-widget-id="wid_1555318877_nokf3ahaj"
+                                                                                    class="moto-widget moto-widget-divider moto-preset-2 moto-align-left moto-spacing-top-small moto-spacing-right-auto moto-spacing-bottom-small moto-spacing-left-auto  "
+                                                                                    data-widget="divider_horizontal"
+                                                                                    data-preset="2">
+                                                                                    <hr class="moto-widget-divider-line"
+                                                                                        style="max-width:100%;width:60px;">
+                                                                                </div>
+                                                                            </div>
+
+                                                                            <div class="moto-widget moto-widget-text moto-preset-default moto-spacing-top-auto moto-spacing-right-small moto-spacing-bottom-auto moto-spacing-left-small"
+                                                                                data-widget="text" data-preset="default"
+                                                                                data-spacing="asas" data-animation=""
+                                                                                data-draggable-disabled="">
+                                                                                <div
+                                                                                    class="moto-widget-text-content moto-widget-text-editable">
+                                                                                    <p class="moto-text_261">Select
+                                                                                        time:</p>
+                                                                                    <p class="moto-text_261"><br></p>
+                                                                                    <p class="moto-text_186"><select
+                                                                                            name="time" id="time">
+                                                                                            <option value="12:00">12:00
+                                                                                            </option>
+                                                                                            <option value="1:00">1:00
+                                                                                            </option>
+                                                                                            <option value="2:00">2:00
+                                                                                            </option>
+                                                                                            <option value="3:00">3:00
+                                                                                            </option>
+                                                                                        </select><br></p>
+                                                                                    </p>
+                                                                                </div>
+                                                                                <div data-widget-id="wid_1555318877_nokf3ahaj"
+                                                                                    class="moto-widget moto-widget-divider moto-preset-2 moto-align-left moto-spacing-top-small moto-spacing-right-auto moto-spacing-bottom-small moto-spacing-left-auto  "
+                                                                                    data-widget="divider_horizontal"
+                                                                                    data-preset="2">
+                                                                                    <hr class="moto-widget-divider-line"
+                                                                                        style="max-width:100%;width:60px;">
+                                                                                </div>
+                                                                            </div>
+
+                                                                            <div class="moto-widget moto-widget-text moto-preset-default moto-spacing-top-auto moto-spacing-right-small moto-spacing-bottom-auto moto-spacing-left-small"
+                                                                                data-widget="text" data-preset="default"
+                                                                                data-spacing="asas" data-animation=""
+                                                                                data-draggable-disabled="">
+                                                                                <div
+                                                                                    class="moto-widget-contact_form-buttons">
+
+                                                                                    <div class="moto-widget moto-widget-button moto-preset-default moto-align-left"
+                                                                                        data-preset="default"
+                                                                                        data-align="left">
+                                                                                        <button type="submit"
+                                                                                            class="moto-widget-button-link moto-size-medium"
+                                                                                            data-size="medium"><span
+                                                                                                class="fa moto-widget-theme-icon"></span><span
+                                                                                                class="moto-widget-button-label">Book
+                                                                                                now</span></button>
+                                                                                    </div>
+
+                                                                                </div>
+                                                                            </div>
+                                                                          
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                </form>
+
+                {% endblock %}
