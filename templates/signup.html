@@ -1,0 +1,456 @@
+{% extends "base.html" %}
+{% load static %}
+{% block content%}
+
+
+<div class="page-wrapper bg-gra-03 p-t-45 p-b-50">
+    <div class="wrapper wrapper--w790">
+        <div class="card card-5">
+            <div class="card-heading" id="hh">
+            </div>
+            <div class="card-body">
+                {% if value %}
+                <script>
+                    alert("Signup successful");
+                </script>
+            {% else %}
+                <script>
+                    
+                </script>
+            {% endif%}
+                <form method="POST" action="{% url 'signup' %}">
+                    {% csrf_token %}
+                    <section id="section-content" class="content page-17 moto-section" data-widget="section"
+                        data-container="section">
+                        <div class="moto-widget moto-widget-block moto-bg-color_custom4 moto-spacing-top-large moto-spacing-right-auto moto-spacing-bottom-large moto-spacing-left-auto"
+                            data-widget="block" data-spacing="lala"
+                            style="background-image:url(../{% static 'mt-demo/79800/79832/mt-content/uploads/2019/04/mt-1802-content-bg05.jpg' %});background-position:top;background-repeat:no-repeat;background-size:cover;"
+                            data-bg-image="{% static '2019/04/mt-1802-content-bg05.jpg' %}" data-bg-position="top">
+
+
+                            <div class="container-fluid">
+                                <div class="row">
+                                    <div class="moto-cell col-sm-12" data-container="container">
+
+
+                                        <div class="moto-widget moto-widget-row row-fixed moto-justify-content_center moto-spacing-top-auto moto-spacing-right-auto moto-spacing-bottom-auto moto-spacing-left-auto"
+                                            data-grid-type="sm" data-widget="row" data-spacing="aaaa" style=""
+                                            data-bg-position="left top">
+
+
+                                            <div class="container-fluid">
+                                                <div class="row" data-container="container">
+
+
+                                                    <div class="moto-widget moto-widget-row__column moto-cell col-sm-12 moto-spacing-top-auto moto-spacing-right-auto moto-spacing-bottom-auto moto-spacing-left-auto"
+                                                        style="" data-widget="row.column" data-container="container"
+                                                        data-spacing="aaaa" data-bg-position="left top">
+
+
+
+                                                        <div class="moto-widget moto-widget-text moto-preset-default moto-spacing-top-auto moto-spacing-right-auto moto-spacing-bottom-auto moto-spacing-left-auto"
+                                                            data-widget="text" data-preset="default" data-spacing="aaaa"
+                                                            data-animation="">
+                                                            <div
+                                                                class="moto-widget-text-content moto-widget-text-editable">
+                                                                <h1 class="moto-text_system_5">Account</h1>
+                                                            </div>
+                                                        </div>
+
+
+                                                    </div>
+
+
+
+                                                </div>
+                                            </div>
+                                        </div>
+
+
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="form-row m-b-55">
+                            <div class="moto-widget moto-widget-row__column moto-cell col-sm-8 moto-spacing-top-auto moto-spacing-right-auto moto-spacing-bottom-auto moto-spacing-left-auto"
+                                style="" data-widget="row.column" data-container="container" data-spacing="aaaa"
+                                data-bg-position="left top">
+
+
+                                <div class="moto-widget moto-widget-row moto-spacing-top-large moto-spacing-right-auto moto-spacing-bottom-auto moto-spacing-left-auto"
+                                    data-grid-type="sm" data-widget="row" data-spacing="laaa" style=""
+                                    data-bg-position="left top">
+
+
+                                    <div class="container-fluid">
+                                        <div class="row" data-container="container">
+
+
+                                            <div class="moto-widget moto-widget-row__column moto-cell col-sm-1 moto-spacing-top-auto moto-spacing-right-auto moto-spacing-bottom-auto moto-spacing-left-auto"
+                                                style="" data-widget="row.column" data-container="container"
+                                                data-spacing="aaaa" data-bg-position="left top">
+
+
+                                            </div>
+                                            <div class="moto-widget moto-widget-row__column moto-cell col-sm-9 moto-spacing-top-auto moto-spacing-right-auto moto-spacing-bottom-auto moto-spacing-left-auto"
+                                                style="" data-widget="row.column" data-container="container"
+                                                data-spacing="aaaa" data-bg-position="left top">
+
+
+                                                <div class="moto-widget moto-widget-row moto-spacing-top-auto moto-spacing-right-auto moto-spacing-bottom-auto moto-spacing-left-auto"
+                                                    data-grid-type="sm" data-widget="row" data-spacing="aaaa" style=""
+                                                    data-bg-position="left top">
+
+
+                                                    <div class="container-fluid">
+                                                        <div class="row" data-container="container">
+
+
+                                                            <div class="moto-widget moto-widget-row__column moto-cell col-sm-6 moto-spacing-top-auto moto-spacing-right-auto moto-spacing-bottom-large moto-spacing-left-auto"
+                                                                style="" data-widget="row.column"
+                                                                data-container="container" data-spacing="aala"
+                                                                data-bg-position="left top">
+                                                                <div class="moto-widget moto-widget-text moto-preset-default moto-spacing-top-auto moto-spacing-right-small moto-spacing-bottom-auto moto-spacing-left-small"
+                                                                    data-widget="text" data-preset="default"
+                                                                    data-spacing="asas" data-animation="">
+                                                                </div>
+                                                                <div class="form-row m-b-55">
+
+                                                                    <div class="value">
+                                                                        <div class="row row-space">
+
+                                                                            <div class="input-group-desc">
+
+                                                                                <div class="moto-widget moto-widget-text moto-preset-default moto-spacing-top-auto moto-spacing-right-small moto-spacing-bottom-auto moto-spacing-left-small"
+                                                                                    data-widget="text"
+                                                                                    data-preset="default"
+                                                                                    data-spacing="asas"
+                                                                                    data-animation=""
+                                                                                    data-draggable-disabled="">
+                                                                                    <div
+                                                                                        class="moto-widget-text-content moto-widget-text-editable">
+                                                                                        <p class="moto-text_261">First
+                                                                                            name:</p>
+                                                                                        <p class="moto-text_261"><br>
+                                                                                        </p>
+                                                                                        <p class="moto-text_186"><input
+                                                                                                class="input--style-5"
+                                                                                                type="text"
+                                                                                                name="f_name"
+                                                                                                id="f_name" required><br></p>
+                                                                                        </p>
+                                                                                    </div>
+                                                                                    <div data-widget-id="wid_1555318877_nokf3ahaj"
+                                                                                        class="moto-widget moto-widget-divider moto-preset-2 moto-align-left moto-spacing-top-small moto-spacing-right-auto moto-spacing-bottom-small moto-spacing-left-auto  "
+                                                                                        data-widget="divider_horizontal"
+                                                                                        data-preset="2">
+                                                                                        <hr class="moto-widget-divider-line"
+                                                                                            style="max-width:100%;width:60px;">
+                                                                                    </div>
+                                                                                </div>
+
+
+                                                                                <div class="moto-widget moto-widget-text moto-preset-default moto-spacing-top-auto moto-spacing-right-small moto-spacing-bottom-auto moto-spacing-left-small"
+                                                                                    data-widget="text"
+                                                                                    data-preset="default"
+                                                                                    data-spacing="asas"
+                                                                                    data-animation="">
+                                                                                    <div
+                                                                                        class="moto-widget-text-content moto-widget-text-editable">
+                                                                                        <p class="moto-text_261">Last
+                                                                                            name:</p>
+                                                                                        <p class="moto-text_261">&nbsp;
+                                                                                        </p>
+                                                                                        <p class="moto-text_186"><input
+                                                                                                class="input--style-5"
+                                                                                                type="text"
+                                                                                                name="l_name"
+                                                                                                id="l_name" required></p>
+                                                                                    </div>
+                                                                                    <div data-widget-id="wid_1555318877_nokf3ahaj"
+                                                                                        class="moto-widget moto-widget-divider moto-preset-2 moto-align-left moto-spacing-top-small moto-spacing-right-auto moto-spacing-bottom-small moto-spacing-left-auto  "
+                                                                                        data-widget="divider_horizontal"
+                                                                                        data-preset="2">
+                                                                                        <hr class="moto-widget-divider-line"
+                                                                                            style="max-width:100%;width:60px;">
+                                                                                    </div>
+                                                                                </div>
+
+                                                                                <div class="moto-widget moto-widget-text moto-preset-default moto-spacing-top-auto moto-spacing-right-small moto-spacing-bottom-auto moto-spacing-left-small"
+                                                                                    data-widget="text"
+                                                                                    data-preset="default"
+                                                                                    data-spacing="asas"
+                                                                                    data-animation="">
+                                                                                    <div
+                                                                                        class="moto-widget-text-content moto-widget-text-editable">
+                                                                                        <p class="moto-text_261">Gender:
+                                                                                        </p>
+                                                                                        <p class="moto-text_261">&nbsp;
+                                                                                        </p>
+                                                                                        <p class="moto-text_186">
+                                                                                            <input type="radio"
+                                                                                                name="gender"
+                                                                                                value="male"> Male
+                                                                                            <input type="radio"
+                                                                                                name="gender"
+                                                                                                value="female"> female
+
+                                                                                        <div data-widget-id="wid_1555318877_nokf3ahaj"
+                                                                                            class="moto-widget moto-widget-divider moto-preset-2 moto-align-left moto-spacing-top-small moto-spacing-right-auto moto-spacing-bottom-small moto-spacing-left-auto  "
+                                                                                            data-widget="divider_horizontal"
+                                                                                            data-preset="2">
+                                                                                            <hr class="moto-widget-divider-line"
+                                                                                                style="max-width:100%;width:60px;">
+                                                                                        </div>
+                                                                                    </div>
+
+                                                                                    <div
+                                                                                        class="moto-widget-text-content moto-widget-text-editable">
+                                                                                        <p class="moto-text_261">Email:
+                                                                                        </p>
+                                                                                        <p class="moto-text_261">&nbsp;
+                                                                                        </p>
+                                                                                        <p class="moto-text_186"><input
+                                                                                                class="input--style-5"
+                                                                                                type="email"
+                                                                                                name="email" id="email" required>
+                                                                                        </p>
+                                                                                    </div>
+                                                                                    <div data-widget-id="wid_1555318877_nokf3ahaj"
+                                                                                        class="moto-widget moto-widget-divider moto-preset-2 moto-align-left moto-spacing-top-small moto-spacing-right-auto moto-spacing-bottom-small moto-spacing-left-auto  "
+                                                                                        data-widget="divider_horizontal"
+                                                                                        data-preset="2">
+                                                                                        <hr class="moto-widget-divider-line"
+                                                                                            style="max-width:100%;width:60px;">
+                                                                                    </div>
+                                                                                    <div
+                                                                                        class="moto-widget-text-content moto-widget-text-editable">
+                                                                                        <p class="moto-text_261">
+                                                                                            Password:</p>
+                                                                                        <p class="moto-text_261">&nbsp;
+                                                                                        </p>
+                                                                                        <p class="moto-text_186"><input
+                                                                                                class="input--style-5"
+                                                                                                type="Password"
+                                                                                                name="password"
+                                                                                                id="password" required></p>
+                                                                                    </div>
+                                                                                    <div data-widget-id="wid_1555318877_nokf3ahaj"
+                                                                                        class="moto-widget moto-widget-divider moto-preset-2 moto-align-left moto-spacing-top-small moto-spacing-right-auto moto-spacing-bottom-small moto-spacing-left-auto  "
+                                                                                        data-widget="divider_horizontal"
+                                                                                        data-preset="2">
+                                                                                        <hr class="moto-widget-divider-line"
+                                                                                            style="max-width:100%;width:60px;">
+                                                                                    </div>
+                                                                                </div>
+
+                                                                                <div class="moto-widget moto-widget-text moto-preset-default moto-spacing-top-auto moto-spacing-right-small moto-spacing-bottom-auto moto-spacing-left-small"
+                                                                                    data-widget="text"
+                                                                                    data-preset="default"
+                                                                                    data-spacing="asas"
+                                                                                    data-animation="">
+                                                                                    <div
+                                                                                        class="moto-widget-text-content moto-widget-text-editable">
+                                                                                        <p class="moto-text_261">Phone
+                                                                                            no:</p>
+                                                                                        <p class="moto-text_261">&nbsp;
+                                                                                        </p>
+                                                                                        <p class="moto-text_186">
+                                                                                        <div class="input-group">
+                                                                                            <input
+                                                                                                class="input--style-5"
+                                                                                                type="tel" name="phone"
+                                                                                                id="phone" required>
+                                                                                        </div>
+                                                                                        <div data-widget-id="wid_1555318877_nokf3ahaj"
+                                                                                            class="moto-widget moto-widget-divider moto-preset-2 moto-align-left moto-spacing-top-small moto-spacing-right-auto moto-spacing-bottom-small moto-spacing-left-auto  "
+                                                                                            data-widget="divider_horizontal"
+                                                                                            data-preset="2">
+                                                                                            <hr class="moto-widget-divider-line"
+                                                                                                style="max-width:100%;width:60px;">
+                                                                                        </div>
+                                                                                    </div>
+
+                                                                                    <div class="moto-widget moto-widget-text moto-preset-default moto-spacing-top-auto moto-spacing-right-small moto-spacing-bottom-auto r1"
+                                                                                        data-widget="text"
+                                                                                        data-preset="default"
+                                                                                        data-spacing="asas"
+                                                                                        data-animation="">
+                                                                                        <div
+                                                                                            class="moto-widget-text-content moto-widget-text-editable">
+                                                                                            <p class="moto-text_261">
+                                                                                                Blood group:</p>
+                                                                                            <p class="moto-text_261">
+                                                                                                &nbsp;</p>
+                                                                                            <p class="moto-text_186">
+                                                                                            <div class="input-group">
+                                                                                                <div
+                                                                                                    class="rs-select2 js-select-simple select--no-search">
+                                                                                                    <select
+                                                                                                        name="blood_group"
+                                                                                                        id="blood_group" required>
+                                                                                                        <option
+                                                                                                            disabled="disabled"
+                                                                                                            selected="selected">
+                                                                                                            Choose
+                                                                                                            option
+                                                                                                        </option>
+                                                                                                        <option>A+
+                                                                                                        </option>
+                                                                                                        <option>A-
+                                                                                                        </option>
+                                                                                                        <option>B+
+                                                                                                        </option>
+                                                                                                        <option>B-
+                                                                                                        </option>
+                                                                                                        <option>AB+
+                                                                                                        </option>
+                                                                                                        <option>AB-
+                                                                                                        </option>
+                                                                                                        <option>O+
+                                                                                                        </option>
+                                                                                                        <option>O-
+                                                                                                        </option>
+                                                                                                    </select>
+                                                                                                    <div
+                                                                                                        class="select-dropdown">
+                                                                                                    </div>
+                                                                                                </div>
+                                                                                            </div>
+                                                                                            <div data-widget-id="wid_1555318877_nokf3ahaj"
+                                                                                                class="moto-widget moto-widget-divider moto-preset-2 moto-align-left moto-spacing-top-small moto-spacing-right-auto moto-spacing-bottom-small moto-spacing-left-auto  "
+                                                                                                data-widget="divider_horizontal"
+                                                                                                data-preset="2">
+                                                                                                <hr class="moto-widget-divider-line"
+                                                                                                    style="max-width:100%;width:60px;">
+                                                                                            </div>
+                                                                                        </div>
+
+                                                                                        <div class="moto-widget moto-widget-text moto-preset-default moto-spacing-top-auto moto-spacing-right-small moto-spacing-bottom-auto r1"
+                                                                                            data-widget="text"
+                                                                                            data-preset="default"
+                                                                                            data-spacing="asas"
+                                                                                            data-animation="">
+                                                                                            <div
+                                                                                                class="moto-widget-text-content moto-widget-text-editable">
+                                                                                                <p
+                                                                                                    class="moto-text_261">
+                                                                                                    Age:</p>
+                                                                                                <p
+                                                                                                    class="moto-text_261">
+                                                                                                    &nbsp;</p>
+                                                                                                <p
+                                                                                                    class="moto-text_186">
+                                                                                                <div
+                                                                                                    class="input-group">
+                                                                                                    <input
+                                                                                                        class="input--style-5"
+                                                                                                        type="Age"
+                                                                                                        name="age"
+                                                                                                        id="age" required>
+                                                                                                </div>
+                                                                                                </p>
+                                                                                            </div>
+                                                                                            <div data-widget-id="wid_1555318877_nokf3ahaj"
+                                                                                                class="moto-widget moto-widget-divider moto-preset-2 moto-align-left moto-spacing-top-small moto-spacing-right-auto moto-spacing-bottom-small moto-spacing-left-auto  "
+                                                                                                data-widget="divider_horizontal"
+                                                                                                data-preset="2">
+                                                                                                <hr class="moto-widget-divider-line"
+                                                                                                    style="max-width:100%;width:60px;">
+                                                                                            </div>
+                                                                                        </div>
+
+                                                                                        <div class="moto-widget moto-widget-text moto-preset-default moto-spacing-top-auto moto-spacing-right-small moto-spacing-bottom-auto r1 "
+                                                                                            data-widget="text"
+                                                                                            data-preset="default"
+                                                                                            data-spacing="asas"
+                                                                                            data-animation="">
+                                                                                            <div
+                                                                                                class="moto-widget-text-content moto-widget-text-editable">
+                                                                                                <p
+                                                                                                    class="moto-text_261">
+                                                                                                    Are you an existing
+                                                                                                    customer?</p>
+                                                                                                <p
+                                                                                                    class="moto-text_261">
+                                                                                                    &nbsp;</p>
+                                                                                                <p
+                                                                                                    class="moto-text_186">
+                                                                                                <div
+                                                                                                    class="input-group">
+                                                                                                    <div class="p-t-15">
+                                                                                                        <label
+                                                                                                            class="radio-container m-r-55">Yes
+                                                                                                            <input
+                                                                                                                type="radio"
+                                                                                                                name="exist">
+                                                                                                            <span
+                                                                                                                class="checkmark"></span>
+                                                                                                        </label>
+                                                                                                        <label
+                                                                                                            class="radio-container">No
+                                                                                                            <input
+                                                                                                                type="radio"
+                                                                                                                checked="checked"
+                                                                                                                name="exist">
+                                                                                                            <span
+                                                                                                                class="checkmark"></span>
+                                                                                                        </label>
+                                                                                                    </div>
+                                                                                                </div>
+                                                                                                <div data-widget-id="wid_1555318877_nokf3ahaj"
+                                                                                                    class="moto-widget moto-widget-divider moto-preset-2 moto-align-left moto-spacing-top-small moto-spacing-right-auto moto-spacing-bottom-small moto-spacing-left-auto  "
+                                                                                                    data-widget="divider_horizontal"
+                                                                                                    data-preset="2">
+                                                                                                    <hr class="moto-widget-divider-line"
+                                                                                                        style="max-width:100%;width:60px;">
+                                                                                                </div>
+                                                                                            </div>
+
+
+                                                                                            <div>
+                                                                                                <div
+                                                                                                    class="moto-widget-contact_form-buttons">
+
+                                                                                                    <div class="moto-widget moto-widget-button moto-preset-default moto-align-left"
+                                                                                                        data-preset="default"
+                                                                                                        data-align="left">
+                                                                                                        <button
+                                                                                                            type="submit"
+                                                                                                            class="moto-widget-button-link moto-size-medium"
+                                                                                                            data-size="medium"><span
+                                                                                                                class="fa moto-widget-theme-icon"></span><span
+                                                                                                                class="moto-widget-button-label">Sign
+                                                                                                                up</span>
+                                                                                                    </div>
+
+
+                                                                                                </div>
+
+
+
+                                                                                            </div>
+                                                                                        </div>
+                                                                                    </div>
+
+
+                                                                                </div>
+                                                                            </div>
+                                                                        </div>
+                                                                    </div>
+
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+            </div>
+            </form>
+
+            {% endblock %}
